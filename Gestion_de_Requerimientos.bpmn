@@ -42,11 +42,11 @@
     <sequenceFlow id="flow18" sourceRef="alfrescoStartevent1" targetRef="exclusivegateway1"></sequenceFlow>
     <userTask id="alfrescoUsertask1" name="Reunión de Planificación" activiti:formKey="wf:adhocTask"></userTask>
     <sequenceFlow id="flow20" sourceRef="alfrescoUsertask1" targetRef="exclusivegateway2"></sequenceFlow>
-    <userTask id="alfrescoUsertask2" name="Elaborar Historias de Usuario" activiti:formKey="wf:adhocTask"></userTask>
+    <userTask id="alfrescoUsertask2" name="Elaborar Historias de Usuario" activiti:async="true" activiti:exclusive="false" activiti:formKey="wf:adhocTask"></userTask>
     <sequenceFlow id="flow21" sourceRef="exclusivegateway2" targetRef="alfrescoUsertask2"></sequenceFlow>
-    <userTask id="alfrescoUsertask3" name="Elaborar Historias de Usuario" activiti:formKey="wf:adhocTask"></userTask>
+    <userTask id="alfrescoUsertask3" name="Elaborar Historias de Usuario" activiti:async="true" activiti:exclusive="false" activiti:formKey="wf:adhocTask"></userTask>
     <sequenceFlow id="flow22" sourceRef="exclusivegateway2" targetRef="alfrescoUsertask3"></sequenceFlow>
-    <userTask id="alfrescoUsertask4" name="Elaborar Historias de Usuario" activiti:formKey="wf:adhocTask"></userTask>
+    <userTask id="alfrescoUsertask4" name="Elaborar Historias de Usuario" activiti:async="true" activiti:exclusive="false" activiti:formKey="wf:adhocTask"></userTask>
     <sequenceFlow id="flow23" sourceRef="exclusivegateway2" targetRef="alfrescoUsertask4"></sequenceFlow>
     <sequenceFlow id="flow24" sourceRef="alfrescoUsertask2" targetRef="exclusivegateway3"></sequenceFlow>
     <sequenceFlow id="flow25" sourceRef="alfrescoUsertask3" targetRef="exclusivegateway3"></sequenceFlow>
